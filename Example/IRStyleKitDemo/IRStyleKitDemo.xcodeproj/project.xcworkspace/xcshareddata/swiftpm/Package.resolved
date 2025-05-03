@@ -1,0 +1,24 @@
+{
+  "originHash" : "cefb15c07c69576f068e25cac400a3a4241b678770e24a9b7515d4f4135446fb",
+  "pins" : [
+    {
+      "identity" : "ircore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ios-roadmap/ircore.git",
+      "state" : {
+        "revision" : "9480559907db6e63ca4c07e574990011607b992f",
+        "version" : "0.0.1"
+      }
+    },
+    {
+      "identity" : "irfoundation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ios-roadmap/IRFoundation.git",
+      "state" : {
+        "revision" : "e20c595128c35e52acdcc15acd913a9c518e386e",
+        "version" : "0.0.1"
+      }
+    }
+  ],
+  "version" : 3
+}
