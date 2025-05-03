@@ -14,14 +14,15 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/ios-roadmap/ircore.git", from: "0.0.1"),
+        .package(name: "IRCore", path: "../IRCore"),
     ],
     targets: [
         .target(
             name: "IRStyleKit",
             dependencies: [
-                .product(name: "IRCore", package: "ircore"),
-            ]
+                "IRCore"
+            ],
+            path: "IRStyleKit"
         ),
     ]
 )
