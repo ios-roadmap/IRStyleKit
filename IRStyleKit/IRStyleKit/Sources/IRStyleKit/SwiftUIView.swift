@@ -16,4 +16,3 @@ struct SwiftUIView: View {
 #Preview {
     SwiftUIView()
 }
-
