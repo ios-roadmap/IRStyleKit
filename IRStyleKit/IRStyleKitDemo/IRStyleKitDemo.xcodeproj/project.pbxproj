@@ -7,57 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6463FE3E2DC61C5300B45C0C /* IRStyleKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6463FE3D2DC61C5300B45C0C /* IRStyleKit */; };
+		64D62CB12DC75E85006AE39D /* IRStyleKit in Frameworks */ = {isa = PBXBuildFile; productRef = 64D62CB02DC75E85006AE39D /* IRStyleKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6463FE1E2DC61B5B00B45C0C /* PBXContainerItemProxy */ = {
+		64D62C922DC75D46006AE39D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6463FE042DC61B5A00B45C0C /* Project object */;
+			containerPortal = 64D62C782DC75D44006AE39D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6463FE0B2DC61B5A00B45C0C;
+			remoteGlobalIDString = 64D62C7F2DC75D44006AE39D;
 			remoteInfo = IRStyleKitDemo;
 		};
-		6463FE282DC61B5B00B45C0C /* PBXContainerItemProxy */ = {
+		64D62C9C2DC75D46006AE39D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6463FE042DC61B5A00B45C0C /* Project object */;
+			containerPortal = 64D62C782DC75D44006AE39D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6463FE0B2DC61B5A00B45C0C;
+			remoteGlobalIDString = 64D62C7F2DC75D44006AE39D;
 			remoteInfo = IRStyleKitDemo;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6463FE0C2DC61B5A00B45C0C /* IRStyleKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IRStyleKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6463FE1D2DC61B5B00B45C0C /* IRStyleKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IRStyleKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6463FE272DC61B5B00B45C0C /* IRStyleKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IRStyleKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64D62C802DC75D44006AE39D /* IRStyleKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IRStyleKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64D62C912DC75D46006AE39D /* IRStyleKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IRStyleKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64D62C9B2DC75D46006AE39D /* IRStyleKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IRStyleKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		6463FE0E2DC61B5A00B45C0C /* IRStyleKitDemo */ = {
+		64D62C822DC75D44006AE39D /* IRStyleKitDemo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = IRStyleKitDemo;
+			sourceTree = "<group>";
+		};
+		64D62C942DC75D46006AE39D /* IRStyleKitDemoTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = IRStyleKitDemoTests;
+			sourceTree = "<group>";
+		};
+		64D62C9E2DC75D46006AE39D /* IRStyleKitDemoUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = IRStyleKitDemoUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6463FE092DC61B5A00B45C0C /* Frameworks */ = {
+		64D62C7D2DC75D44006AE39D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6463FE3E2DC61C5300B45C0C /* IRStyleKit in Frameworks */,
+				64D62CB12DC75E85006AE39D /* IRStyleKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6463FE1A2DC61B5B00B45C0C /* Frameworks */ = {
+		64D62C8E2DC75D46006AE39D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6463FE242DC61B5B00B45C0C /* Frameworks */ = {
+		64D62C982DC75D46006AE39D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -67,20 +77,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6463FE032DC61B5A00B45C0C = {
+		64D62C772DC75D44006AE39D = {
 			isa = PBXGroup;
 			children = (
-				6463FE0E2DC61B5A00B45C0C /* IRStyleKitDemo */,
-				6463FE0D2DC61B5A00B45C0C /* Products */,
+				64D62C822DC75D44006AE39D /* IRStyleKitDemo */,
+				64D62C942DC75D46006AE39D /* IRStyleKitDemoTests */,
+				64D62C9E2DC75D46006AE39D /* IRStyleKitDemoUITests */,
+				64D62C812DC75D44006AE39D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6463FE0D2DC61B5A00B45C0C /* Products */ = {
+		64D62C812DC75D44006AE39D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6463FE0C2DC61B5A00B45C0C /* IRStyleKitDemo.app */,
-				6463FE1D2DC61B5B00B45C0C /* IRStyleKitDemoTests.xctest */,
-				6463FE272DC61B5B00B45C0C /* IRStyleKitDemoUITests.xctest */,
+				64D62C802DC75D44006AE39D /* IRStyleKitDemo.app */,
+				64D62C912DC75D46006AE39D /* IRStyleKitDemoTests.xctest */,
+				64D62C9B2DC75D46006AE39D /* IRStyleKitDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,132 +100,138 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6463FE0B2DC61B5A00B45C0C /* IRStyleKitDemo */ = {
+		64D62C7F2DC75D44006AE39D /* IRStyleKitDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6463FE312DC61B5B00B45C0C /* Build configuration list for PBXNativeTarget "IRStyleKitDemo" */;
+			buildConfigurationList = 64D62CA52DC75D46006AE39D /* Build configuration list for PBXNativeTarget "IRStyleKitDemo" */;
 			buildPhases = (
-				6463FE082DC61B5A00B45C0C /* Sources */,
-				6463FE092DC61B5A00B45C0C /* Frameworks */,
-				6463FE0A2DC61B5A00B45C0C /* Resources */,
+				64D62C7C2DC75D44006AE39D /* Sources */,
+				64D62C7D2DC75D44006AE39D /* Frameworks */,
+				64D62C7E2DC75D44006AE39D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				6463FE0E2DC61B5A00B45C0C /* IRStyleKitDemo */,
+				64D62C822DC75D44006AE39D /* IRStyleKitDemo */,
 			);
 			name = IRStyleKitDemo;
 			packageProductDependencies = (
-				6463FE3D2DC61C5300B45C0C /* IRStyleKit */,
+				64D62CB02DC75E85006AE39D /* IRStyleKit */,
 			);
 			productName = IRStyleKitDemo;
-			productReference = 6463FE0C2DC61B5A00B45C0C /* IRStyleKitDemo.app */;
+			productReference = 64D62C802DC75D44006AE39D /* IRStyleKitDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6463FE1C2DC61B5B00B45C0C /* IRStyleKitDemoTests */ = {
+		64D62C902DC75D46006AE39D /* IRStyleKitDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6463FE342DC61B5B00B45C0C /* Build configuration list for PBXNativeTarget "IRStyleKitDemoTests" */;
+			buildConfigurationList = 64D62CA82DC75D46006AE39D /* Build configuration list for PBXNativeTarget "IRStyleKitDemoTests" */;
 			buildPhases = (
-				6463FE192DC61B5B00B45C0C /* Sources */,
-				6463FE1A2DC61B5B00B45C0C /* Frameworks */,
-				6463FE1B2DC61B5B00B45C0C /* Resources */,
+				64D62C8D2DC75D46006AE39D /* Sources */,
+				64D62C8E2DC75D46006AE39D /* Frameworks */,
+				64D62C8F2DC75D46006AE39D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6463FE1F2DC61B5B00B45C0C /* PBXTargetDependency */,
+				64D62C932DC75D46006AE39D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				64D62C942DC75D46006AE39D /* IRStyleKitDemoTests */,
 			);
 			name = IRStyleKitDemoTests;
 			packageProductDependencies = (
 			);
 			productName = IRStyleKitDemoTests;
-			productReference = 6463FE1D2DC61B5B00B45C0C /* IRStyleKitDemoTests.xctest */;
+			productReference = 64D62C912DC75D46006AE39D /* IRStyleKitDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6463FE262DC61B5B00B45C0C /* IRStyleKitDemoUITests */ = {
+		64D62C9A2DC75D46006AE39D /* IRStyleKitDemoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6463FE372DC61B5B00B45C0C /* Build configuration list for PBXNativeTarget "IRStyleKitDemoUITests" */;
+			buildConfigurationList = 64D62CAB2DC75D46006AE39D /* Build configuration list for PBXNativeTarget "IRStyleKitDemoUITests" */;
 			buildPhases = (
-				6463FE232DC61B5B00B45C0C /* Sources */,
-				6463FE242DC61B5B00B45C0C /* Frameworks */,
-				6463FE252DC61B5B00B45C0C /* Resources */,
+				64D62C972DC75D46006AE39D /* Sources */,
+				64D62C982DC75D46006AE39D /* Frameworks */,
+				64D62C992DC75D46006AE39D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6463FE292DC61B5B00B45C0C /* PBXTargetDependency */,
+				64D62C9D2DC75D46006AE39D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				64D62C9E2DC75D46006AE39D /* IRStyleKitDemoUITests */,
 			);
 			name = IRStyleKitDemoUITests;
 			packageProductDependencies = (
 			);
 			productName = IRStyleKitDemoUITests;
-			productReference = 6463FE272DC61B5B00B45C0C /* IRStyleKitDemoUITests.xctest */;
+			productReference = 64D62C9B2DC75D46006AE39D /* IRStyleKitDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6463FE042DC61B5A00B45C0C /* Project object */ = {
+		64D62C782DC75D44006AE39D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
-					6463FE0B2DC61B5A00B45C0C = {
+					64D62C7F2DC75D44006AE39D = {
 						CreatedOnToolsVersion = 16.0;
 					};
-					6463FE1C2DC61B5B00B45C0C = {
+					64D62C902DC75D46006AE39D = {
 						CreatedOnToolsVersion = 16.0;
-						TestTargetID = 6463FE0B2DC61B5A00B45C0C;
+						TestTargetID = 64D62C7F2DC75D44006AE39D;
 					};
-					6463FE262DC61B5B00B45C0C = {
+					64D62C9A2DC75D46006AE39D = {
 						CreatedOnToolsVersion = 16.0;
-						TestTargetID = 6463FE0B2DC61B5A00B45C0C;
+						TestTargetID = 64D62C7F2DC75D44006AE39D;
 					};
 				};
 			};
-			buildConfigurationList = 6463FE072DC61B5A00B45C0C /* Build configuration list for PBXProject "IRStyleKitDemo" */;
+			buildConfigurationList = 64D62C7B2DC75D44006AE39D /* Build configuration list for PBXProject "IRStyleKitDemo" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 6463FE032DC61B5A00B45C0C;
+			mainGroup = 64D62C772DC75D44006AE39D;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				6463FE3C2DC61C5300B45C0C /* XCLocalSwiftPackageReference "../../../IRStyleKit" */,
+				64D62CAF2DC75E85006AE39D /* XCLocalSwiftPackageReference "../IRStyleKit" */,
 			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 6463FE0D2DC61B5A00B45C0C /* Products */;
+			productRefGroup = 64D62C812DC75D44006AE39D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6463FE0B2DC61B5A00B45C0C /* IRStyleKitDemo */,
-				6463FE1C2DC61B5B00B45C0C /* IRStyleKitDemoTests */,
-				6463FE262DC61B5B00B45C0C /* IRStyleKitDemoUITests */,
+				64D62C7F2DC75D44006AE39D /* IRStyleKitDemo */,
+				64D62C902DC75D46006AE39D /* IRStyleKitDemoTests */,
+				64D62C9A2DC75D46006AE39D /* IRStyleKitDemoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6463FE0A2DC61B5A00B45C0C /* Resources */ = {
+		64D62C7E2DC75D44006AE39D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6463FE1B2DC61B5B00B45C0C /* Resources */ = {
+		64D62C8F2DC75D46006AE39D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6463FE252DC61B5B00B45C0C /* Resources */ = {
+		64D62C992DC75D46006AE39D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -223,21 +241,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6463FE082DC61B5A00B45C0C /* Sources */ = {
+		64D62C7C2DC75D44006AE39D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6463FE192DC61B5B00B45C0C /* Sources */ = {
+		64D62C8D2DC75D46006AE39D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6463FE232DC61B5B00B45C0C /* Sources */ = {
+		64D62C972DC75D46006AE39D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -247,20 +265,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6463FE1F2DC61B5B00B45C0C /* PBXTargetDependency */ = {
+		64D62C932DC75D46006AE39D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6463FE0B2DC61B5A00B45C0C /* IRStyleKitDemo */;
-			targetProxy = 6463FE1E2DC61B5B00B45C0C /* PBXContainerItemProxy */;
+			target = 64D62C7F2DC75D44006AE39D /* IRStyleKitDemo */;
+			targetProxy = 64D62C922DC75D46006AE39D /* PBXContainerItemProxy */;
 		};
-		6463FE292DC61B5B00B45C0C /* PBXTargetDependency */ = {
+		64D62C9D2DC75D46006AE39D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6463FE0B2DC61B5A00B45C0C /* IRStyleKitDemo */;
-			targetProxy = 6463FE282DC61B5B00B45C0C /* PBXContainerItemProxy */;
+			target = 64D62C7F2DC75D44006AE39D /* IRStyleKitDemo */;
+			targetProxy = 64D62C9C2DC75D46006AE39D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		6463FE2F2DC61B5B00B45C0C /* Debug */ = {
+		64D62CA32DC75D46006AE39D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -321,7 +339,7 @@
 			};
 			name = Debug;
 		};
-		6463FE302DC61B5B00B45C0C /* Release */ = {
+		64D62CA42DC75D46006AE39D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -374,7 +392,7 @@
 			};
 			name = Release;
 		};
-		6463FE322DC61B5B00B45C0C /* Debug */ = {
+		64D62CA62DC75D46006AE39D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -413,7 +431,7 @@
 			};
 			name = Debug;
 		};
-		6463FE332DC61B5B00B45C0C /* Release */ = {
+		64D62CA72DC75D46006AE39D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -452,7 +470,7 @@
 			};
 			name = Release;
 		};
-		6463FE352DC61B5B00B45C0C /* Debug */ = {
+		64D62CA92DC75D46006AE39D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -475,7 +493,7 @@
 			};
 			name = Debug;
 		};
-		6463FE362DC61B5B00B45C0C /* Release */ = {
+		64D62CAA2DC75D46006AE39D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -498,7 +516,7 @@
 			};
 			name = Release;
 		};
-		6463FE382DC61B5B00B45C0C /* Debug */ = {
+		64D62CAC2DC75D46006AE39D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -520,7 +538,7 @@
 			};
 			name = Debug;
 		};
-		6463FE392DC61B5B00B45C0C /* Release */ = {
+		64D62CAD2DC75D46006AE39D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -545,38 +563,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6463FE072DC61B5A00B45C0C /* Build configuration list for PBXProject "IRStyleKitDemo" */ = {
+		64D62C7B2DC75D44006AE39D /* Build configuration list for PBXProject "IRStyleKitDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6463FE2F2DC61B5B00B45C0C /* Debug */,
-				6463FE302DC61B5B00B45C0C /* Release */,
+				64D62CA32DC75D46006AE39D /* Debug */,
+				64D62CA42DC75D46006AE39D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6463FE312DC61B5B00B45C0C /* Build configuration list for PBXNativeTarget "IRStyleKitDemo" */ = {
+		64D62CA52DC75D46006AE39D /* Build configuration list for PBXNativeTarget "IRStyleKitDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6463FE322DC61B5B00B45C0C /* Debug */,
-				6463FE332DC61B5B00B45C0C /* Release */,
+				64D62CA62DC75D46006AE39D /* Debug */,
+				64D62CA72DC75D46006AE39D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6463FE342DC61B5B00B45C0C /* Build configuration list for PBXNativeTarget "IRStyleKitDemoTests" */ = {
+		64D62CA82DC75D46006AE39D /* Build configuration list for PBXNativeTarget "IRStyleKitDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6463FE352DC61B5B00B45C0C /* Debug */,
-				6463FE362DC61B5B00B45C0C /* Release */,
+				64D62CA92DC75D46006AE39D /* Debug */,
+				64D62CAA2DC75D46006AE39D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6463FE372DC61B5B00B45C0C /* Build configuration list for PBXNativeTarget "IRStyleKitDemoUITests" */ = {
+		64D62CAB2DC75D46006AE39D /* Build configuration list for PBXNativeTarget "IRStyleKitDemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6463FE382DC61B5B00B45C0C /* Debug */,
-				6463FE392DC61B5B00B45C0C /* Release */,
+				64D62CAC2DC75D46006AE39D /* Debug */,
+				64D62CAD2DC75D46006AE39D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -584,18 +602,18 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		6463FE3C2DC61C5300B45C0C /* XCLocalSwiftPackageReference "../../../IRStyleKit" */ = {
+		64D62CAF2DC75E85006AE39D /* XCLocalSwiftPackageReference "../IRStyleKit" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../../IRStyleKit;
+			relativePath = ../IRStyleKit;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6463FE3D2DC61C5300B45C0C /* IRStyleKit */ = {
+		64D62CB02DC75E85006AE39D /* IRStyleKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = IRStyleKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 6463FE042DC61B5A00B45C0C /* Project object */;
+	rootObject = 64D62C782DC75D44006AE39D /* Project object */;
 }
