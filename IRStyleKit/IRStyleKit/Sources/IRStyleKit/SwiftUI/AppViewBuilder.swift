@@ -7,13 +7,22 @@
 
 import SwiftUI
 
-struct AppViewBuilder<TabbarView: View, OnboardingView: View>: View {
-    var showTabBar: Bool = false
-    //Group
-    @ViewBuilder var tabbarView: TabbarView
-    @ViewBuilder var onboardingView: OnboardingView
-    
-    var body: some View {
+public struct AppViewBuilder<TabbarView: View, OnboardingView: View>: View {
+    public var showTabBar: Bool
+    @ViewBuilder public var tabbarView: TabbarView
+    @ViewBuilder public var onboardingView: OnboardingView
+
+    public init(
+        showTabBar: Bool,
+        @ViewBuilder tabbarView: @escaping () -> TabbarView,
+        @ViewBuilder onboardingView: @escaping () -> OnboardingView
+    ) {
+        self.showTabBar = showTabBar
+        self.tabbarView = tabbarView()
+        self.onboardingView = onboardingView()
+    }
+
+    public var body: some View {
         ZStack {
             if showTabBar {
                 tabbarView
