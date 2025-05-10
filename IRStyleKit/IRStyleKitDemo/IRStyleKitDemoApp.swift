@@ -11,7 +11,8 @@ import SwiftUI
 struct IRStyleKitDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            SnapshotShowcaseView()
+            Text("")
         }
     }
 }
