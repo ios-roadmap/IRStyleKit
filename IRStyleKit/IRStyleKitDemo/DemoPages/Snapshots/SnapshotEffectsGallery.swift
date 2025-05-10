@@ -14,6 +14,7 @@ struct SnapshotEffectsGallery: View {
     @State private var capturedOriginal: Image?
     @State private var capturedEffected: [EffectKind: Image] = [:]
     @State private var shownEffect: EffectKind?
+    @State private var exportedPDFURL: URL?
 
     // MARK: - Body
 
@@ -23,6 +24,11 @@ struct SnapshotEffectsGallery: View {
                 snapshotPreview
                 effectButtons
                 resultPreview
+                if let url = exportedPDFURL {
+                    ShareLink(item: url) {
+                        Label("Share Exported PDF", systemImage: "square.and.arrow.up")
+                    }
+                }
             }
             .padding()
         }
@@ -56,20 +62,33 @@ struct SnapshotEffectsGallery: View {
                 EffectKind.allCases.forEach { kind in
                     capturedEffected[kind] = kind.renderer(for: snapshotTarget).snapshotImage()
                 }
+
+                if let image = shownEffect.flatMap({ capturedEffected[$0] }) ?? capturedOriginal {
+                    exportImageAsPDF(image: image)
+                }
             }
     }
 
     private var effectButtons: some View {
         VStack(spacing: 12) {
             ForEach(EffectKind.allCases) { effect in
-                Button(action: { shownEffect = effect }) {
+                Button(action: {
+                    shownEffect = effect
+                    if let img = capturedEffected[effect] {
+                        exportImageAsPDF(image: img)
+                    }
+                }) {
                     Text(effect.label)
                         .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(.borderedProminent)
             }
+
             Button("Show Original") {
                 shownEffect = nil
+                if let img = capturedOriginal {
+                    exportImageAsPDF(image: img)
+                }
             }
             .buttonStyle(.bordered)
         }
@@ -96,7 +115,48 @@ struct SnapshotEffectsGallery: View {
             .frame(height: 160)
             .overlay(Text("No Image").foregroundStyle(.secondary))
     }
+
+    // MARK: - PDF Export
+
+    @MainActor
+    private func exportImageAsPDF(image: Image) {
+        let pageSize = CGSize(width: 300, height: 200)
+        let tempURL = FileManager.default.temporaryDirectory
+            .appendingPathComponent(UUID().uuidString + ".pdf")
+
+        let renderer = ImageRenderer(content:
+            image
+                .resizable()
+                .scaledToFit()
+                .frame(width: pageSize.width, height: pageSize.height)
+        )
+
+        var thrown: Error?
+
+        renderer.render { size, render in
+            var mediaBox = CGRect(origin: .zero, size: pageSize)
+            guard let ctx = CGContext(tempURL as CFURL, mediaBox: &mediaBox, nil) else {
+                thrown = CocoaError(.fileWriteUnknown)
+                return
+            }
+
+            ctx.beginPDFPage(nil)
+            render(ctx)
+            ctx.endPDFPage()
+            ctx.closePDF()
+        }
+
+        if let error = thrown {
+            print("PDF export failed:", error)
+        } else {
+            exportedPDFURL = tempURL
+        }
+    }
 }
+
+
+
+
 
 @available(iOS 17, *)
 private enum EffectKind: String, CaseIterable, Identifiable {
