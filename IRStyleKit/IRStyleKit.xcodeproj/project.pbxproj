@@ -10,6 +10,7 @@
 		6460BAC92DCA88B600F4C7B7 /* IRStyleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6460BAC02DCA88B600F4C7B7 /* IRStyleKit.framework */; };
 		6460BAF32DCA88F900F4C7B7 /* IRStyleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6460BAC02DCA88B600F4C7B7 /* IRStyleKit.framework */; };
 		6460BAF42DCA88F900F4C7B7 /* IRStyleKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6460BAC02DCA88B600F4C7B7 /* IRStyleKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		64B548D72DD7C98D006E999D /* IRStyleKitLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 64B548D62DD7C98D006E999D /* IRStyleKitLibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		6460BAC02DCA88B600F4C7B7 /* IRStyleKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IRStyleKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6460BAC82DCA88B600F4C7B7 /* IRStyleKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IRStyleKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6460BAE32DCA88F100F4C7B7 /* IRStyleKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IRStyleKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64B548D52DD7C974006E999D /* IRStyleKitLibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = IRStyleKitLibrary; path = ../IRStyleKitLibrary; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -68,11 +70,6 @@
 			path = IRStyleKit;
 			sourceTree = "<group>";
 		};
-		6460BACC2DCA88B600F4C7B7 /* IRStyleKitTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = IRStyleKitTests;
-			sourceTree = "<group>";
-		};
 		6460BAE42DCA88F100F4C7B7 /* IRStyleKitDemo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = IRStyleKitDemo;
@@ -85,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64B548D72DD7C98D006E999D /* IRStyleKitLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,8 +108,8 @@
 		6460BAB62DCA88B600F4C7B7 = {
 			isa = PBXGroup;
 			children = (
+				64B548D52DD7C974006E999D /* IRStyleKitLibrary */,
 				6460BAC22DCA88B600F4C7B7 /* IRStyleKit */,
-				6460BACC2DCA88B600F4C7B7 /* IRStyleKitTests */,
 				6460BAE42DCA88F100F4C7B7 /* IRStyleKitDemo */,
 				6460BAF22DCA88F900F4C7B7 /* Frameworks */,
 				6460BAC12DCA88B600F4C7B7 /* Products */,
@@ -166,6 +164,7 @@
 			);
 			name = IRStyleKit;
 			packageProductDependencies = (
+				64B548D62DD7C98D006E999D /* IRStyleKitLibrary */,
 			);
 			productName = IRStyleKit;
 			productReference = 6460BAC02DCA88B600F4C7B7 /* IRStyleKit.framework */;
@@ -183,9 +182,6 @@
 			);
 			dependencies = (
 				6460BACB2DCA88B600F4C7B7 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				6460BACC2DCA88B600F4C7B7 /* IRStyleKitTests */,
 			);
 			name = IRStyleKitTests;
 			packageProductDependencies = (
@@ -692,6 +688,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		64B548D62DD7C98D006E999D /* IRStyleKitLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = IRStyleKitLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6460BAB72DCA88B600F4C7B7 /* Project object */;
 }

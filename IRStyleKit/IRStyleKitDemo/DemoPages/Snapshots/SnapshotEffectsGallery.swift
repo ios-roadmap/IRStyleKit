@@ -154,10 +154,6 @@ struct SnapshotEffectsGallery: View {
     }
 }
 
-
-
-
-
 @available(iOS 17, *)
 private enum EffectKind: String, CaseIterable, Identifiable {
     case blur, rounded, shadow, mask
