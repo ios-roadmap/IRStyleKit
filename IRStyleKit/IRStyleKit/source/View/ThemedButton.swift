@@ -34,3 +34,5 @@ struct ThemedButton<Label: View>: View {
 ///https://www.youtube.com/watch?v=uK1wKIY49z0&list=PLwvDm4Vfkdphc1LLLjCaEd87BEg07M97y&index=4&t=2s
 ///https://www.youtube.com/watch?v=pXmBRK1BjLw&list=PLwvDm4Vfkdphc1LLLjCaEd87BEg07M97y&index=12&t=1s
 ///https://www.youtube.com/watch?v=1GYKyQHVDWw&list=PLwvDm4Vfkdphc1LLLjCaEd87BEg07M97y&index=15&t=1306s
+///https://www.youtube.com/watch?v=K91rKH_O8BY&list=PLwvDm4Vfkdphc1LLLjCaEd87BEg07M97y&index=29&t=3s
+///https://www.youtube.com/watch?v=lncOFL3Qsns&list=PLwvDm4Vfkdphc1LLLjCaEd87BEg07M97y&index=30
