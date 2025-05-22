@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-internal import IRResources
+import IRResources
 
 struct ThemedButton<Label: View>: View {
     let action: () -> Void

@@ -15,18 +15,17 @@ let package = Package(
             targets: ["IRStyleKit"]),
     ],
     dependencies: [
-        .package(name: "IRCore", path: "../../IRCore/IRCore"),
+        .package(name: "IRCore", path: "../IRCore"),
+        .package(name: "IRResources", path: "../IRResources"),
     ],
     targets: [
         .target(
             name: "IRStyleKit",
             dependencies: [
-                "IRCore"
-            ]
-        ),
-        .testTarget(
-            name: "IRStyleKitTests",
-            dependencies: ["IRStyleKit"]
-        ),
+                "IRCore",
+                "IRResources",
+            ],
+            path: "IRStyleKit"
+        )
     ]
 )
