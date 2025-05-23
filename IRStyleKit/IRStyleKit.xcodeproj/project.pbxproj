@@ -7,53 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6460BAC92DCA88B600F4C7B7 /* IRStyleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6460BAC02DCA88B600F4C7B7 /* IRStyleKit.framework */; };
-		6460BAF32DCA88F900F4C7B7 /* IRStyleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6460BAC02DCA88B600F4C7B7 /* IRStyleKit.framework */; };
-		6460BAF42DCA88F900F4C7B7 /* IRStyleKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6460BAC02DCA88B600F4C7B7 /* IRStyleKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		64B548D72DD7C98D006E999D /* IRStyleKitLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 64B548D62DD7C98D006E999D /* IRStyleKitLibrary */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		6460BACA2DCA88B600F4C7B7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6460BAB72DCA88B600F4C7B7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6460BABF2DCA88B600F4C7B7;
-			remoteInfo = IRStyleKit;
-		};
-		6460BAF52DCA88F900F4C7B7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6460BAB72DCA88B600F4C7B7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6460BABF2DCA88B600F4C7B7;
-			remoteInfo = IRStyleKit;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		6460BAF72DCA88F900F4C7B7 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				6460BAF42DCA88F900F4C7B7 /* IRStyleKit.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		6460BAC02DCA88B600F4C7B7 /* IRStyleKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IRStyleKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6460BAC82DCA88B600F4C7B7 /* IRStyleKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IRStyleKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6460BAE32DCA88F100F4C7B7 /* IRStyleKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IRStyleKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64B548D52DD7C974006E999D /* IRStyleKitLibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = IRStyleKitLibrary; path = ../IRStyleKitLibrary; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
 		6460BAD02DCA88B600F4C7B7 /* Exceptions for "IRStyleKit" folder in "IRStyleKit" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				source/Snapshot/SnapshotEffectsGallery.swift,
+				source/Snapshot/SnapshotPDFExportDemo.swift,
+			);
 			publicHeaders = (
 				include/IRStyleKit.h,
 			);
@@ -70,11 +38,6 @@
 			path = IRStyleKit;
 			sourceTree = "<group>";
 		};
-		6460BAE42DCA88F100F4C7B7 /* IRStyleKitDemo */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = IRStyleKitDemo;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,22 +49,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6460BAC52DCA88B600F4C7B7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6460BAC92DCA88B600F4C7B7 /* IRStyleKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6460BAE02DCA88F100F4C7B7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6460BAF32DCA88F900F4C7B7 /* IRStyleKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -110,7 +57,6 @@
 			children = (
 				64B548D52DD7C974006E999D /* IRStyleKitLibrary */,
 				6460BAC22DCA88B600F4C7B7 /* IRStyleKit */,
-				6460BAE42DCA88F100F4C7B7 /* IRStyleKitDemo */,
 				6460BAF22DCA88F900F4C7B7 /* Frameworks */,
 				6460BAC12DCA88B600F4C7B7 /* Products */,
 			);
@@ -120,8 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				6460BAC02DCA88B600F4C7B7 /* IRStyleKit.framework */,
-				6460BAC82DCA88B600F4C7B7 /* IRStyleKitTests.xctest */,
-				6460BAE32DCA88F100F4C7B7 /* IRStyleKitDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,50 +114,6 @@
 			productReference = 6460BAC02DCA88B600F4C7B7 /* IRStyleKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6460BAC72DCA88B600F4C7B7 /* IRStyleKitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6460BAD62DCA88B600F4C7B7 /* Build configuration list for PBXNativeTarget "IRStyleKitTests" */;
-			buildPhases = (
-				6460BAC42DCA88B600F4C7B7 /* Sources */,
-				6460BAC52DCA88B600F4C7B7 /* Frameworks */,
-				6460BAC62DCA88B600F4C7B7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6460BACB2DCA88B600F4C7B7 /* PBXTargetDependency */,
-			);
-			name = IRStyleKitTests;
-			packageProductDependencies = (
-			);
-			productName = IRStyleKitTests;
-			productReference = 6460BAC82DCA88B600F4C7B7 /* IRStyleKitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		6460BAE22DCA88F100F4C7B7 /* IRStyleKitDemo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6460BAEF2DCA88F200F4C7B7 /* Build configuration list for PBXNativeTarget "IRStyleKitDemo" */;
-			buildPhases = (
-				6460BADF2DCA88F100F4C7B7 /* Sources */,
-				6460BAE02DCA88F100F4C7B7 /* Frameworks */,
-				6460BAE12DCA88F100F4C7B7 /* Resources */,
-				6460BAF72DCA88F900F4C7B7 /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6460BAF62DCA88F900F4C7B7 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				6460BAE42DCA88F100F4C7B7 /* IRStyleKitDemo */,
-			);
-			name = IRStyleKitDemo;
-			packageProductDependencies = (
-			);
-			productName = IRStyleKitDemo;
-			productReference = 6460BAE32DCA88F100F4C7B7 /* IRStyleKitDemo.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -227,12 +127,6 @@
 					6460BABF2DCA88B600F4C7B7 = {
 						CreatedOnToolsVersion = 16.0;
 						LastSwiftMigration = 1600;
-					};
-					6460BAC72DCA88B600F4C7B7 = {
-						CreatedOnToolsVersion = 16.0;
-					};
-					6460BAE22DCA88F100F4C7B7 = {
-						CreatedOnToolsVersion = 16.0;
 					};
 				};
 			};
@@ -251,28 +145,12 @@
 			projectRoot = "";
 			targets = (
 				6460BABF2DCA88B600F4C7B7 /* IRStyleKit */,
-				6460BAC72DCA88B600F4C7B7 /* IRStyleKitTests */,
-				6460BAE22DCA88F100F4C7B7 /* IRStyleKitDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6460BABE2DCA88B600F4C7B7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6460BAC62DCA88B600F4C7B7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6460BAE12DCA88F100F4C7B7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -289,34 +167,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6460BAC42DCA88B600F4C7B7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6460BADF2DCA88F100F4C7B7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		6460BACB2DCA88B600F4C7B7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6460BABF2DCA88B600F4C7B7 /* IRStyleKit */;
-			targetProxy = 6460BACA2DCA88B600F4C7B7 /* PBXContainerItemProxy */;
-		};
-		6460BAF62DCA88F900F4C7B7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6460BABF2DCA88B600F4C7B7 /* IRStyleKit */;
-			targetProxy = 6460BAF52DCA88F900F4C7B7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		6460BAD22DCA88B600F4C7B7 /* Debug */ = {
@@ -530,128 +381,6 @@
 			};
 			name = Release;
 		};
-		6460BAD72DCA88B600F4C7B7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8W2QVSMGJ3;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.iosroadmap.IRStyleKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		6460BAD82DCA88B600F4C7B7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8W2QVSMGJ3;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.iosroadmap.IRStyleKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		6460BAF02DCA88F200F4C7B7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = IRStyleKitDemo/IRStyleKitDemo.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"IRStyleKitDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = 8W2QVSMGJ3;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.iosroadmap.IRStyleKitDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		6460BAF12DCA88F200F4C7B7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = IRStyleKitDemo/IRStyleKitDemo.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"IRStyleKitDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = 8W2QVSMGJ3;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.iosroadmap.IRStyleKitDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -669,24 +398,6 @@
 			buildConfigurations = (
 				6460BAD22DCA88B600F4C7B7 /* Debug */,
 				6460BAD32DCA88B600F4C7B7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6460BAD62DCA88B600F4C7B7 /* Build configuration list for PBXNativeTarget "IRStyleKitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6460BAD72DCA88B600F4C7B7 /* Debug */,
-				6460BAD82DCA88B600F4C7B7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6460BAEF2DCA88F200F4C7B7 /* Build configuration list for PBXNativeTarget "IRStyleKitDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6460BAF02DCA88F200F4C7B7 /* Debug */,
-				6460BAF12DCA88F200F4C7B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

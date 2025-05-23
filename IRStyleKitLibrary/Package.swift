@@ -17,6 +17,8 @@ let package = Package(
     dependencies: [
         .package(name: "IRCore", path: "../../IRCore"),
         .package(name: "IRResources", path: "../../IRResources"),
+        
+        .package(url: "https://github.com/SDWebImage/SDWebImageSwiftUI.git", from: "3.1.3"),
     ],
     targets: [
         .target(
@@ -24,6 +26,8 @@ let package = Package(
             dependencies: [
                 "IRCore",
                 "IRResources",
+                
+                .product(name: "SDWebImageSwiftUI", package: "SDWebImageSwiftUI"),
             ]
         ),
 

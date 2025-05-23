@@ -5,19 +5,19 @@
 //  Created by Ömer Faruk Öztürk on 16.05.2025.
 //
 
-import SwiftUI
-import IRResources
-
-struct ThemedButton<Label: View>: View {
-    let action: () -> Void
-    @ViewBuilder let label: () -> Label
-
-    var body: some View {
-        Button(action: action) { label() }
-            .buttonStyle(.borderedProminent)
-            .tint(AppColors.primary)
-    }
-}
+//import SwiftUI
+//internal import IRResources
+//
+//struct ThemedButton<Label: View>: View {
+//    let action: () -> Void
+//    @ViewBuilder let label: () -> Label
+//
+//    var body: some View {
+//        Button(action: action) { label() }
+//            .buttonStyle(.borderedProminent)
+//            .tint(AppColors.primary)
+//    }
+//}
 
 ///Hedeflenen Videolar:
 ///https://www.youtube.com/watch?v=pXmBRK1BjLw&list=PLwvDm4Vfkdphc1LLLjCaEd87BEg07M97y&index=12
