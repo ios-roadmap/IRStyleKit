@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+internal import IRCommon
 internal import SDWebImageSwiftUI
 
 public struct AsyncImageView: View {
@@ -13,7 +14,7 @@ public struct AsyncImageView: View {
     public var forceTransitionAnimation: Bool
     
     public init(
-        urlString: String = "https://picsum.photos/600/600",
+        urlString: String,
         forceTransitionAnimation: Bool = false
     ) {
         self.urlString = urlString
@@ -39,6 +40,6 @@ public struct AsyncImageView: View {
 }
 
 #Preview {
-    AsyncImageView()
+    AsyncImageView(urlString: Constants.randomImage)
         .frame(width: 400, height: 400)
 }

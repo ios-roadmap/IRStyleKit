@@ -24,4 +24,21 @@ public extension View {
     func tappableBackground() -> some View {
         background(Color.black.opacity(0.01))
     }
+    
+    /// Clip to a circle or rounded rectangle based on the flag.
+    @ViewBuilder
+    func clipped(
+        isCircle: Bool,
+        cornerRadius: CGFloat = 16
+    ) -> some View {
+        if isCircle {
+            self
+                .clipShape(.circle)
+        } else {
+            self
+                .clipShape(
+                    .rect(cornerRadius: cornerRadius, style: .continuous)
+                )
+        }
+    }
 }

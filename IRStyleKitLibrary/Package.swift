@@ -15,6 +15,7 @@ let package = Package(
             targets: ["IRStyleKitLibrary"]),
     ],
     dependencies: [
+        .package(name: "IRCommon", path: "../../IRCommon"),
         .package(name: "IRCore", path: "../../IRCore"),
         .package(name: "IRResources", path: "../../IRResources"),
         
@@ -24,6 +25,7 @@ let package = Package(
         .target(
             name: "IRStyleKitLibrary",
             dependencies: [
+                "IRCommon",
                 "IRCore",
                 "IRResources",
                 
