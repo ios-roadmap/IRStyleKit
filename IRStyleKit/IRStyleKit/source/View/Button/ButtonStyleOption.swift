@@ -6,18 +6,8 @@
 //
 
 import SwiftUI
-import IRResources
+internal import IRResources
 import IRFoundation
-
-public struct ButtonModel {
-    public var name: String
-    public var handler: VoidHandler
-    
-    public init(name: String, handler: @escaping VoidHandler) {
-        self.name = name
-        self.handler = handler
-    }
-}
 
 @MainActor
 public enum ButtonStyleOption {

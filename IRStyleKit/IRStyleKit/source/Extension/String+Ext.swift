@@ -6,12 +6,12 @@
 //
 
 import SwiftUI
-import IRResources
+public import IRResources
 
 public extension String {
     func highlightedAttributedString(
         _ keywords: [String],
-        colour: Color = .accent,
+        colour: Color = Color.accent,
         weight: Font.Weight = .semibold
     ) -> AttributedString {
         let baseSize = UIFont.preferredFont(forTextStyle: .title3).pointSize
@@ -40,3 +40,5 @@ public extension String {
         return AttributedString(mutable)
     }
 }
+
+// TODO: Ayrı bir modifier olmalı!
