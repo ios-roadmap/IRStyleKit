@@ -1,5 +1,5 @@
 //
-//  ConfigurableKeyValueView.swift
+//  MetadataRowView.swift
 //  IRStyleKit
 //
 //  Created by Ömer Faruk Öztürk on 25.05.2025.
@@ -8,7 +8,7 @@
 import SwiftUI
 internal import IRCommon
 
-struct ConfigurableKeyValueView: View {
+struct MetadataRowView: View {
     
     var imageName: String?
     var headline: String? = "iOS Developer"
@@ -67,7 +67,7 @@ struct ConfigurableKeyValueView: View {
         Color.gray.opacity(0.3).ignoresSafeArea()
         
         VStack {
-            ConfigurableKeyValueView(
+            MetadataRowView(
                 imageName: Constants.randomImage,
                 headline: "iOS Developer",
                 subheadline: "Omer Faruk Ozturk",
@@ -75,7 +75,7 @@ struct ConfigurableKeyValueView: View {
                 isCircleImage: false
             )
             
-            ConfigurableKeyValueView(
+            MetadataRowView(
                 imageName: Constants.randomImage,
                 headline: "iOS Developer",
                 subheadline: "Omer Faruk Ozturk",
@@ -83,7 +83,7 @@ struct ConfigurableKeyValueView: View {
                 isCircleImage: false
             )
             
-            ConfigurableKeyValueView(
+            MetadataRowView(
                 imageName: Constants.randomImage,
                 headline: "iOS Developer",
                 subheadline: "Omer Faruk Ozturk",
@@ -91,21 +91,21 @@ struct ConfigurableKeyValueView: View {
                 isCircleImage: true
             )
             
-            ConfigurableKeyValueView(
+            MetadataRowView(
                 imageName: Constants.randomImage,
                 headline: "iOS Developer",
                 hasNewTag: false,
                 isCircleImage: false
             )
             
-            ConfigurableKeyValueView(
+            MetadataRowView(
                 imageName: Constants.randomImage,
                 subheadline: "Omer Faruk Ozturk",
                 hasNewTag: false,
                 isCircleImage: false
             )
             
-            ConfigurableKeyValueView(
+            MetadataRowView(
                 headline: "iOS Developer",
                 subheadline: "Omer Faruk Ozturk",
                 hasNewTag: false,
